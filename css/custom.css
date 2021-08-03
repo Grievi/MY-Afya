@@ -1,0 +1,28 @@
+.page-header {
+    background-image: url(/Assets/mainbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 582px;
+}
+
+#home-key {
+    position: absolute;
+    right: 0;
+}
+
+.list-items {
+    padding: 10px;
+}
+
+.symptoms form label {
+    width: 100px;
+}
+
+.symptoms form input {
+    width: 500px;
+}
+
+.symptoms form textarea {
+    width: 500px
+}
