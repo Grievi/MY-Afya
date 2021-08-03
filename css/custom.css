@@ -48,3 +48,45 @@
     border-radius: 150px;
     margin-left: 200px;
 }
+
+.stats h1 {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.stats .row {
+    width: 100%;
+    padding-top: 70px;
+}
+
+.row img {
+    margin-left: 220px;
+}
+
+.services h1 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.row-1 {
+    padding-top: 70px;
+}
+
+.card-1 {
+    background-color: blue;
+    width: 70%;
+    height: 30vh;
+    margin-left: 70px;
+    border-radius: 30px;
+    padding-bottom: 70px;
+}
+
+.card-2 {
+    width: 92vw;
+    height: 30vh;
+    background-color: blue;
+    margin-left: 70px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
