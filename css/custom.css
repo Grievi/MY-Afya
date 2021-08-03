@@ -1,3 +1,4 @@
+
 #icons {
     display: flex;
 }
@@ -12,3 +13,9 @@
 footer{
     background: linear-gradient(180deg, rgba(54, 128, 195, 0.92) 7.29%, rgba(54, 128, 195, 0) 100%);
 }
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
