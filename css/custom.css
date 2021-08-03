@@ -1,4 +1,60 @@
 
+.page-header {
+    background-image: url(/Assets/mainbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 582px;
+}
+
+#home-key {
+    position: absolute;
+    right: 0;
+}
+
+.symptoms {
+    background-color: #bebbbb;
+}
+
+.list-items {
+    padding: 10px;
+}
+
+.symptoms form label {
+    width: 100px;
+}
+
+.symptoms form input {
+    width: 500px;
+    background-color: #bebbbb;
+    border-color: #bebbbb;
+}
+
+.symptoms form textarea {
+    width: 500px;
+    background-color: #bebbbb;
+    border-color: #bebbbb;
+}
+
+.submit {
+    border-radius: 5px;
+    background-image: linear-gradient(#bebbbb, white)
+}
+
+.symptoms form {
+    background-color: white;
+    width: 55rem;
+    height: 27rem;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 2rem;
+}
+
+.symptoms h1 {
+    font-size: 1.5rem;
+}
+
+
 #icons {
     display: flex;
 }
@@ -18,4 +74,5 @@ footer{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+
 
