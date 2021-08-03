@@ -1,3 +1,4 @@
+
 .page-header {
     background-image: url(/Assets/mainbackground.jpg);
     background-repeat: no-repeat;
@@ -52,3 +53,26 @@
 .symptoms h1 {
     font-size: 1.5rem;
 }
+
+
+#icons {
+    display: flex;
+}
+#icons img {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+.socials img{
+     margin-top:0px;
+}
+footer{
+    background: linear-gradient(180deg, rgba(54, 128, 195, 0.92) 7.29%, rgba(54, 128, 195, 0) 100%);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+
