@@ -5,6 +5,7 @@
     background-position: center;
     background-size: cover;
     margin: 0;
+    color: white;
 }
 
 .navbar {
@@ -89,4 +90,9 @@
     margin-left: 70px;
     margin-top: 20px;
     border-radius: 30px;
+}
+
+.footer {
+    margin-top: 70px;
+    margin-left: 90px;
 }
