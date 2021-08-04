@@ -14,70 +14,85 @@
     
     <header>
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+            <nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">MyAfya</a>
+                <a  id="logo" class="navbar-brand fw-bold p-md-3" href="#">MyAfya</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav text-center">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    <a class="nav-link" href="#">ABOUT US</a>
-                    <a class="nav-link" href="#">SERVICES</a>
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <div id="navBar" class="navbar-nav ms-auto text-center">
+                    <a  class="nav-link active fw-bold" aria-current="page" href="#">HOME</a>
+                    <a  class="nav-link fw-bold" href="#">ABOUT US</a>
+                    <a  class="nav-link fw-bold" href="#">SERVICES</a>
+                    <a  class="nav-link fw-bold" href="#">CONTACT</a>
                     </div>
                 </div>
                 </div>
             </nav>
+            <div class="myafya">
+                <h1 style="color:white;text-transform: uppercase;">my afya comes first</h1><br>
+                <h3 style=" color:white;text-transform: uppercase;">jijue,jitibu!</h3>
+            </div>
         </div>
     </header>
     <!-- get podcasts and news section -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-top: 3rem;">
         <div class="container">
-            <div>
-                <p class="display-2">Get our podcasts and News</p>
-            </div>
-            <div>
-                <img src="./Assets/contact us podcatst/news1.png" alt="podcast news">
-            </div>
-            <div>
-                <img src="./Assets/contact us podcatst/news3.png" alt="podcast news">
-            </div>
-            <div>
-                <img src="./Assets/contact us podcatst/podcast2.png" alt="podcast news">
-            </div>
-        </div>
-        <div class="container">
-            <div><p class="display-2">Contact Us</p></div>
             <div class="row">
-                <div class="col-md-6">
-                    <form action="">
-                            <label for="name">Name:</label><br>
-                            <input type="text" placeholder="Enter   your name"    required><br>
-                            <label for="name">Email:</label><br>
-                            <input type="email" placeholder="Enter  your E-mail"     required><br>
-                            <label for="subject">Subject:</label><br>
-                            <input type="text" placeholder="Enter   your first    name" required><br>
-                            <label for="message">Your Message</label><br>
-                            <textarea name="" id="" cols="30" rows="10"></textarea><br>
-                           <button class="" type="submit">Submit</button>
-                    </form>
+                <div>
+                    <h2>Get our podcasts and News</h2>
                 </div>
-                <div class="col-md-5">
-                    <p class="display-4">Address</p>
-                    <p><span class="material-icons-outlined"><img src="./Assets/vectors/outline_pin_drop_black_24dp.png" alt="location">The MyAfya Hospital</span><br>
-                    <span><img src="./Assets/vectors/outline_phone_black_24dp.png" alt="phone">(+254)730000000</span><br>
-                    <span><img src="./Assets/vectors/twotone_email_black_24dp.png" alt="email"></span>enquiry@myafyahospital.com</p>
-                 
+            <div class="row">
+                <div class="col-md-3">
+                    <a href=""><img src="./Assets/contact us podcatst/news1.png" alt="podcast news"></a>
                 </div>
             </div>
-            
+            <div class="row">
+                <div class="col-md-3">
+                    <a href=""><img src="./Assets/contact us podcatst/news3.png" alt="podcast news"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href=""><img src="./Assets/contact us podcatst/podcast2.png" alt="podcast news"></a>
+                </div>
+            </div>
         </div>
-    </div>
+        
+
+            <div id="contact" class="container" style="padding-top: 5rem;">
+                <div><h1>Contact Us</h1></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form action="">
+                                <label for="name">Name:</label><br>
+                                <input type="text" placeholder="Enter   your name" style="padding:10px; width:100%;" id="name"  required><br>
+                                <label for="name">Email:</label><br>
+                                <input type="email" placeholder="Enter  your E-mail" style="padding:10px; width:100%;" id="email" required><br>
+                                <label for="subject">Subject:</label><br>
+                                <input type="text" placeholder="Enter subject e.g customer service" id="subject" style="padding:10px; width:100%;" required><br>
+                                <label for="message">Your Message</label><br>
+                                <textarea name="" id="message" cols="30" rows="10" style="width: 100%;"></textarea><br>
+                            <button id="submit" type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div style="padding-left:4rem;" class="col-md-5">
+                        <p class="fw-bold" style="font-size: 28px;">Address</p>
+                        <p><span class="material-icons-outlined"><img src="./Assets/vectors/outline_pin_drop_black_24dp.png" alt="location">The MyAfya Hospital</span><br>
+                        <span><img src="./Assets/vectors/outline_phone_black_24dp.png" alt="phone">(+254)730000000</span><br>
+                        <span><img src="./Assets/vectors/twotone_email_black_24dp.png" alt="email"></span>enquiry@myafyahospital.com</p>
+                    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
     <!-- beginning of the footer -->
-    <footer>
-        <div class="container-fluid">
+    <footer >
+        <div id="footer" class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
                     <span class="fw-bold" style="text-transform:capitalize; font-size:24px;">services offered</span><br>
@@ -110,5 +125,6 @@
             </div>
         </div>
    </footer> 
+   <script src="./js/script.js"></script>
 </body>
 </html>
