@@ -58,7 +58,7 @@
 .symptoms form {
     background-color: white;
     width: 55rem;
-    height: 27rem;
+    height: fit-content;
     margin: auto;
     margin-bottom: 10px;
     padding-top: 2rem;
@@ -70,4 +70,12 @@
 
 .textarea {
     height: 3rem;
+}
+
+.form-selection {
+    height: fit-content
+}
+
+.symptoms-selections {
+    display: none;
 }

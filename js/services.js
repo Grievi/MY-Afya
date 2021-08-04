@@ -15,12 +15,16 @@ function PatientMaker(fname, lname, cell, email, disease, message) {
     this.disease = disease;
     this.message = message;
 }
-
+myArray = [];
 
 
 
 //User Interface
 $(document).ready(function() {
+    $("button#symptoms-button").click(function(event) {
+        event.preventDefault();
+        $(".symptoms-selections").toggle();
+    })
     $("button#submit1").click(function(event) {
         event.preventDefault();
         var firstName = $("input#c-fname").val();
@@ -48,6 +52,10 @@ $(document).ready(function() {
         } else {
             userInfo = new ConsoltMaker(firstName, secondName, number, email, symptoms)
         }
+        $("input[type=checkbox]:checked").each(function() {
+            myArray.push($(this).val());
+        });
+        alert(myArray)
     })
     $("#submit2").click(function(event) {
         event.preventDefault();
@@ -81,5 +89,8 @@ $(document).ready(function() {
             alert(userInfo.disease);
             alert(userInfo.message);
         }
+
     })
+
+
 })
