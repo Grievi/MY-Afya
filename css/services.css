@@ -67,3 +67,7 @@
 .symptoms h1 {
     font-size: 1.5rem;
 }
+
+.textarea {
+    height: 3rem;
+}
