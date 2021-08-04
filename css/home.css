@@ -43,7 +43,9 @@
 }
 
 .card {
-    background-color: black;
+    background-image: url(/Assets/about_us/jonathan-borba-v_2FRXEba94-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
     height: 30vh;
     width: 35%;
     border-radius: 150px;
