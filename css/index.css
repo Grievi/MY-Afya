@@ -26,6 +26,11 @@
     margin: 40px;
 }
 
+.navbar ul li a {
+    text-decoration: none;
+    list-style: none;
+}
+
 .container h2 {
     margin: 90px;
     margin-left: -67px;
