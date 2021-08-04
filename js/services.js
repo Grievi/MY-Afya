@@ -16,7 +16,7 @@ $(document).ready(function() {
         var firstName = $("input#c-fname").val();
         var secondName = $("input#c-lname").val();
         var number = $("input#c-cell").val();
-        var email = $("input#s-email").val();
+        var email = $("input#c-email").val() + "@gmail.com";
         var symptoms = $("input#c-symptoms").val();
         var description = $("input#c-description").val();
 
@@ -31,12 +31,12 @@ $(document).ready(function() {
             alert("Please enter a valid Phone Number");
             $("input#c-cell").focus();
         } else if (email === "") {
-            alert("Please fill in your e-mail address!")
+            alert("Please enter your email for us to be able to communicate with you!")
         } else if (symptoms === "") {
             alert("Please make a list of your symptoms for us to be able to give you a diagnosis!");
             $("input#c-symptoms").focus();
         } else {
-            alert("Hurray!")
+            alert("Hurray")
         }
     })
     $("#submit2").click(function(event) {
@@ -44,7 +44,7 @@ $(document).ready(function() {
         var firstName = $("input#s-fname").val();
         var secondName = $("input#s-lname").val();
         var number = $("input#s-cell").val();
-        var email = $("input#s-email").val();
+        var email = $("input#s-email").val() + "@gmail.com";
         var disease = $("input#s-disease").val();
         var message = $("input#s-message").val();
 
