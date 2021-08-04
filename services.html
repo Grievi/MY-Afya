@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/services.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/services.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="navbar navbar-expand-sm " style="position: relative;" display="flex">
+            <a class="nav-brand" href="#">LOGO</a>
+            <ul class="navbar-nav" id="home-key">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="container symptoms">
+        <h1>CONSULTATION</h1>
+        <form>
+            <ul style="list-style-type: none;">
+                <li class="list-items"><label for="c-fname">Name:</label><input placeholder="First Name" type="text" id="c-fname"></li>
+                <li class="list-items"><label for="c-lname">L.Name:</label><input placeholder="Second Name" type="text" id="c-lname"></li>
+                <li class="list-items"><label for="c-cell">Cell No:</label><input placeholder="07.." type="number" id="c-cell"></li>
+                <li class="list-items"><label for="c-email">E mail:</label><input placeholder="name@gamil.com" type="email" id="c-email" required></li>
+                <li class="list-items"><label for="c-symptoms">Symptoms:</label><input placeholder="e.g headache, fever" type="text" id="c-symptoms"></li>
+                <li class="list-items"><label for="c-desctiption">Describe:</label><textarea id="c-description" required></textarea></li>
+                <li class="list-items"><label></label><button class="submit" id="submit1">Submit</button></li>
+            </ul>
+        </form>
+        <h1>SERVICES OFFERED</h1>
+        <form>
+            <ul style="list-style-type: none;">
+                <li class="list-items"><label for="s-fname">Name:</label><input placeholder="First Name" type="text" id="s-fname"></li>
+                <li class="list-items"><label for="s-lname">L.Name:</label><input placeholder="Second Name" type="text" id="s-lname"></li>
+                <li class="list-items"><label for="s-cell">Cell No:</label><input placeholder="07.." type="number" id="s-cell" maxlength="10"></li>
+                <li class="list-items"><label for="s-email">E mail:</label><input placeholder="name@gamil.com" type="email" id="s-email"></li>
+                <li class="list-items"><label for="s-disease">Disease:</label><input type="text" id="s-disease"></li>
+                <li class="list-items"><label for="s-message">Message:</label><textarea id="s-message"></textarea></li>
+                <li class="list-items"><label></label><button class="submit" id="submit2">Submit</button></li>
+            </ul>
+        </form>
+    </div>
+
+
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
