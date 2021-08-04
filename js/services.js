@@ -22,7 +22,11 @@ $(document).ready(function() {
 
         if (firstName === "" || secondName === "") {
             alert("Please enter your names!")
-            $("input#c-fname").focus();
+            if (firstName === "") {
+                $("input#c-fname").focus();
+            } else if (secondName === "") {
+                $("input#c-lname").focus();
+            }
         } else if (number.length !== 10) {
             alert("Please enter a valid Phone Number");
             $("input#c-cell").focus();
@@ -44,7 +48,11 @@ $(document).ready(function() {
 
         if (firstName === "" || secondName === "") {
             alert("Please enter your names!")
-            $("input#s-fname").focus();
+            if (firstName === "") {
+                $("input#s-fname").focus();
+            } else if (secondName === "") {
+                $("input#s-lname").focus();
+            }
         } else if (number.length !== 10) {
             alert("Please enter a valid Phone Number");
             $("input#s-cell").focus();
