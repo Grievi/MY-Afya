@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 header{
     background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.3)),url(../Assets/mainbackground.jpg)repeat fixed 100%;
