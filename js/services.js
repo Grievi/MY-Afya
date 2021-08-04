@@ -30,6 +30,8 @@ $(document).ready(function() {
         } else if (number.length !== 10) {
             alert("Please enter a valid Phone Number");
             $("input#c-cell").focus();
+        } else if (email === "") {
+            alert("Please fill in your e-mail address!")
         } else if (symptoms === "") {
             alert("Please make a list of your symptoms for us to be able to give you a diagnosis!");
             $("input#c-symptoms").focus();
@@ -56,6 +58,8 @@ $(document).ready(function() {
         } else if (number.length !== 10) {
             alert("Please enter a valid Phone Number");
             $("input#s-cell").focus();
+        } else if (email === "") {
+            alert("Please fill in your e-mail address!")
         } else if (disease === "") {
             alert("Please name what you are suffering from so that we can match you with the needed specialist!");
             $("input#s-disease").focus();
