@@ -47,7 +47,6 @@ $(document).ready(function() {
             $("input#c-symptoms").focus();
         } else {
             userInfo = new ConsoltMaker(firstName, secondName, number, email, symptoms)
-            alert("Hurray")
         }
     })
     $("#submit2").click(function(event) {
@@ -81,7 +80,6 @@ $(document).ready(function() {
             alert(userInfo.email);
             alert(userInfo.disease);
             alert(userInfo.message);
-            alert("Hurray!")
         }
     })
 })
