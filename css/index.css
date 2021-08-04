@@ -85,6 +85,11 @@
     padding-bottom: 70px;
 }
 
+.card-1 h2 {
+    padding-top: 220px;
+    padding-left: 30px;
+}
+
 .card-2 {
     width: 92vw;
     height: 30vh;
@@ -92,6 +97,11 @@
     margin-left: 70px;
     margin-top: 20px;
     border-radius: 30px;
+    text-align: center;
+}
+
+.card-2 h2 {
+    padding-top: 200px;
 }
 
 .footer {
