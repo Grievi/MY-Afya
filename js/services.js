@@ -16,16 +16,41 @@ $(document).ready(function() {
         var firstName = $("input#c-fname").val();
         var secondName = $("input#c-lname").val();
         var number = $("input#c-cell").val();
-        var email = $("input#-email").val();
+        var email = $("input#s-email").val();
         var symptoms = $("input#c-symptoms").val();
         var description = $("input#c-description").val();
 
         if (firstName === "" || secondName === "") {
             alert("Please enter your names!")
+            $("input#c-fname").focus();
         } else if (number.length !== 10) {
             alert("Please enter a valid Phone Number");
+            $("input#c-cell").focus();
         } else if (symptoms === "") {
             alert("Please make a list of your symptoms for us to be able to give you a diagnosis!");
+            $("input#c-symptoms").focus();
+        } else {
+            alert("Hurray!")
+        }
+    })
+    $("#submit2").click(function(event) {
+        event.preventDefault();
+        var firstName = $("input#s-fname").val();
+        var secondName = $("input#s-lname").val();
+        var number = $("input#s-cell").val();
+        var email = $("input#s-email").val();
+        var disease = $("input#s-disease").val();
+        var message = $("input#s-message").val();
+
+        if (firstName === "" || secondName === "") {
+            alert("Please enter your names!")
+            $("input#s-fname").focus();
+        } else if (number.length !== 10) {
+            alert("Please enter a valid Phone Number");
+            $("input#s-cell").focus();
+        } else if (disease === "") {
+            alert("Please name what you are suffering from so that we can match you with the needed specialist!");
+            $("input#s-disease").focus();
         } else {
             alert("Hurray!")
         }
