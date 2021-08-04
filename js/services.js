@@ -1,10 +1,20 @@
 //Logic Interface
-function PatientMaker(fname, lname, cell, symptoms, ) {
-    this.name = fname + lname;
+var userInfo;
+
+function ConsoltMaker(fname, lname, cell, email, symptoms, ) {
+    this.fullName = fname + " " + lname;
     this.phoneNumber = cell;
+    this.email = email;
     this.symptoms = symptoms;
 }
 
+function PatientMaker(fname, lname, cell, email, disease, message) {
+    this.fullName = fname + " " + lname;
+    this.phoneNumber = cell;
+    this.email = email;
+    this.disease = disease;
+    this.message = message;
+}
 
 
 
@@ -36,6 +46,7 @@ $(document).ready(function() {
             alert("Please make a list of your symptoms for us to be able to give you a diagnosis!");
             $("input#c-symptoms").focus();
         } else {
+            userInfo = new ConsoltMaker(firstName, secondName, number, email, symptoms)
             alert("Hurray")
         }
     })
@@ -64,6 +75,12 @@ $(document).ready(function() {
             alert("Please name what you are suffering from so that we can match you with the needed specialist!");
             $("input#s-disease").focus();
         } else {
+            userInfo = new PatientMaker(firstName, secondName, number, email, disease, message);
+            alert(userInfo.fullName);
+            alert(userInfo.phoneNumber);
+            alert(userInfo.email);
+            alert(userInfo.disease);
+            alert(userInfo.message);
             alert("Hurray!")
         }
     })
