@@ -139,6 +139,10 @@ $(document).ready(function() {
             alert(mostLikely)
         }
     })
+    $("button#disease-button").click(function(event) {
+        event.preventDefault();
+        $(".disease-selection").toggle();
+    })
     $("#submit2").click(function(event) {
         event.preventDefault();
         var firstName = $("input#s-fname").val();
