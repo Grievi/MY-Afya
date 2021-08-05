@@ -1,0 +1,33 @@
+#about-img{
+    float: right;
+    height: 350px;
+    width: 500px;
+    padding-left: 50px;
+}
+h3.titles{
+    border-bottom: 1px solid black;
+    height: 0.7em;
+    width: 100%;
+}
+h3.titles span{
+    display: inline-block;
+    background: white;
+    padding: 0 0.25em;
+}
+hr{
+    color: black;
+    
+}
+.mission{
+    display: flex;
+}
+.mission img{
+    width: 220px;
+    height: 200px;
+    padding: 20px;
+}
+
+footer{
+    margin-top: 100px;
+    background: linear-gradient(180deg, rgba(54, 128, 195, 0.92) 7.29%, rgba(54, 128, 195, 0) 100%);
+}
