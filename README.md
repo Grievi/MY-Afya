@@ -3,7 +3,7 @@
 #### By;
 * Ken Mbira
 * Alex Karumbi
-*Moses Opiyo
+* Moses Opiyo
 * Grievin Otieno
 ## Description
 This web application enables any user or any patient to have an access to the doctor easily without having to queue land wait or waste a lot of time in the hospitals, the website application has a services page that allows the user to access consultation services from the hospital and also book and appointment with a doctor!
@@ -26,5 +26,5 @@ The application has no database that has been set up for collection of user data
 In case ypo want to collaborate on a project just email me at enogroti@gmail.com
 ### License
 MIT LICENCE
-Copyright (c) 2021 **Moses Opiyo, Alex Karumbi, Ken mbira and grievin otieno**
+Copyright (c) 2021 **Moses Opiyo, Alex Karumbi, Ken mbira and Grievin otieno**
   
