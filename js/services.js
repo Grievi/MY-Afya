@@ -26,7 +26,7 @@ var typhoid = new DiseaseGenerator("Typhoid", ["muscle-aches", "constipation", "
 var commonCold = new DiseaseGenerator("Common cold", ["fever", "muscle-aches", "cough", "runny-nose", "loss-of-smell", "chills", "fatigue", "headache", "sore-throat"]);
 var influenza = new DiseaseGenerator("Influenza", ["fever", "coughing", "sore-throat", "runny-nose", "muscle-aches", "muscle-ache", "headache", "fatigue", "vomiting", "diarrhoea"]);
 var pneumonia = new DiseaseGenerator("Pnuemonia", ["cough", "fever", "short-breath", "chest-pains", "loss-of-appetite", "nausea", "vomiting", "fatigue", "rapid-breathing"]);
-var covid = new DiseaseGenerator("Covid-19", ["fever", "dry-cough", "fatigue", "sore-throat", "headache", "loss-of-smell", "short-breath", "chest-pains", "musle-aches", "diarrhoea"])
+var corona = new DiseaseGenerator("Covid-19", ["fever", "dry-cough", "fatigue", "sore-throat", "headache", "loss-of-smell", "short-breath", "chest-pains", "musle-aches", "diarrhoea"])
     //Symptoms matcher function
 var symptomsMatcher = (disease, symptoms) => {
     for (let i = 0; i <= disease.length - 1; i++) {
@@ -73,11 +73,15 @@ $(document).ready(function() {
             $("input[name=symptoms]:checked").each(function() {
                 symptoms.push($(this).val());
             });
-            userInfo = new ConsoltMaker(firstName, secondName, number, email, symptoms)
-            var malariaMatches = symptomsMatcher(malaria.diseaseSymptoms, userInfo.symptoms)
-            var typhoidMatches = symptomsMatcher(typhoid.diseaseSymptoms, userInfo.symptoms)
+            userInfo = new ConsoltMaker(firstName, secondName, number, email, symptoms);
+            var malariaMatches = symptomsMatcher(malaria.diseaseSymptoms, userInfo.symptoms);
+            var typhoidMatches = symptomsMatcher(typhoid.diseaseSymptoms, userInfo.symptoms);
+            var influenzaMatches = symptomsMatcher(influenza.diseaseSymptoms, userInfo.symptoms);
+            var pneumoniaMatches = symptomsMatcher(pneumonia.diseaseSymptoms, userInfo.symptoms);
+            var coronaMatches = symptomsMatcher(corona.diseaseSymptoms, userInfo.symptoms);
             alert(malariaMatches)
             alert(typhoidMatches)
+            alert
         }
     })
     $("#submit2").click(function(event) {
