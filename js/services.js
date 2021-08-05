@@ -124,7 +124,7 @@ $(document).ready(function() {
             arrayMaker(malariaCount.illnessCount, typhoidCount.illnessCount, influenzaCount.illnessCount, pneumoniaCount.illnessCount, coronaCount.illnessCount);
             ranker(matchesArray)
             if (malariaCount.illnessCount === largest) {
-                mostLikely = (malariaCount.illnessName + " " + malariaCount.illnessCount)
+                mostLikely = ("Hello " + firstName + ", You are most likely suffering from " + malariaCount.illnessName + " " + malariaCount.illnessCount + ". We recommend that you take an Antigen test.")
             } else if (largest === typhoidCount.illnessCount) {
                 mostLikely = (typhoidCount.illnessName + " " + typhoidCount.illnessCount)
             } else if (largest === influenzaCount.illnessCount) {
