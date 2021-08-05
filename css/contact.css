@@ -28,12 +28,13 @@ header{
     color: white; 
     font-size: 28px;
 }
+
 #navBar a:hover{
        border: radius 10px;
        background:linear-gradient(180deg, rgba(54, 128, 195, 0.92) 7.29%, rgba(54, 128, 195, 0) 100%); 
        font-size: 28px;
        color: white;
-       transition: 0.5 ease;
+       transition: 0.6 ease;
        transform: translateX(5px);
 }
 .myafya{
