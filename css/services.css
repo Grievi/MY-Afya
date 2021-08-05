@@ -118,6 +118,10 @@
     margin: 0;
 }
 
+.disease-selection {
+    display: none;
+}
+
 @media screen and(max-width: 900px) {
     symptoms form input {
         width: fit-content;

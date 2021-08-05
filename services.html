@@ -69,6 +69,7 @@
                                 <li><label for="loss-of-appetite">Loss off appetite</label><input type="checkbox" id="loss-of-appetite" value="loss-of-appetite" name="symptoms"></li>
                                 <li><label for="runny-nose">Runny nose</label><input type="checkbox" id="runny-nose" value="runny-nose" name="symptoms"></li>
                                 <li><label for="loss-of-smell">Loss of smell</label><input type="checkbox" id="loss-of-smell" value="loss-of-smell" name="symptoms"></li>
+                                <li><label for="loss-of-taste">Loss of smell</label><input type="checkbox" id="loss-of-taste" value="loss-of-taste" name="symptoms"></li>
                                 <li><label for="sore-throat">Sore throat</label><input type="checkbox" id="sore-throat" value="sore-throat" name="symptoms"></li>
                                 <li><label for="sneezing">Sneezing</label><input type="checkbox" id="sneezing" value="sneezing" name="symptoms"></li>
                                 <li><label for="short-breath">Shortness of breath</label><input type="checkbox" id="short-breath" value="short-breath" name="symptoms"></li>
@@ -94,7 +95,15 @@
                         <li class="list-items"><label for="s-lname">L.Name:</label><input placeholder="Second Name" type="text" id="s-lname"></li>
                         <li class="list-items"><label for="s-cell">Cell No:</label><input placeholder="07.." type="number" id="s-cell" maxlength="10"></li>
                         <li class="list-items"><label for="s-email">E mail:</label><input placeholder="name@gamil.com" type="text" id="s-email"></li>
-                        <li class="list-items"><label for="s-disease">Disease:</label><input type="text" id="s-disease"></li>
+                        <li class="list-items">
+                            <button id="disease-button">Disease Category</button>
+                            <ul class="disease-selection">
+                                <li><label for="infectious">Infectious diseases</label><input type="radio" id="infectious" value="infectious" name="disease"></li>
+                                <li><label for="inherited">Inherited diseases</label><input type="radio" id="inherited" value="inherited" name="disease"></li>
+                                <li><label for="mental">Mental diseases</label><input type="radio" id="mental" value="mental" name="disease"></li>
+                                <li><label for="physical">Physical diseases</label><input type="radio" id="physical" value="physical" name="disease"></li>
+                            </ul>
+                        </li>
                         <li class="list-items"><label for="s-message">Message:</label><input type="text" id="s-message" class="textarea"></li>
                         <li class="list-items"><label></label><button class="submit" id="submit2">Submit</button></li>
                     </ul>
