@@ -149,7 +149,8 @@ $(document).ready(function() {
         var secondName = $("input#s-lname").val();
         var number = $("input#s-cell").val();
         var email = $("input#s-email").val() + "@gmail.com";
-        var disease = $("input#s-disease").val();
+        var disease = $("input[name=disease]:checked").val();
+        alert(disease)
         var message = $("input#s-message").val();
 
         if (firstName === "" || secondName === "") {
