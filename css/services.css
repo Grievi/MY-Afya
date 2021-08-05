@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
 #mainNav {
@@ -42,7 +43,7 @@
 }
 
 .symptoms {
-    background-color: #bebbbb;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
 }
 
 .list-items {
@@ -103,9 +104,22 @@
 }
 
 .form-selection {
-    height: fit-content
+    height: fit-content;
+    width: 50rems;
+    margin: 0;
 }
 
 .symptoms-selections {
     display: none;
+}
+
+#footer {
+    background: linear-gradient(180deg, rgba(54, 128, 195, 0.92) 7.29%, rgba(54, 128, 195, 0) 100%);
+    margin: 0;
+}
+
+@media screen and(max-width: 900px) {
+    symptoms form input {
+        width: fit-content;
+    }
 }
