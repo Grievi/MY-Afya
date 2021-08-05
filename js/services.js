@@ -150,7 +150,6 @@ $(document).ready(function() {
         var number = $("input#s-cell").val();
         var email = $("input#s-email").val() + "@gmail.com";
         var disease = $("input[name=disease]:checked").val();
-        alert(disease)
         var message = $("input#s-message").val();
 
         if (firstName === "" || secondName === "") {
@@ -170,6 +169,15 @@ $(document).ready(function() {
             $("input#s-disease").focus();
         } else {
             userInfo = new PatientMaker(firstName, secondName, number, email, disease, message);
+            if (userInfo.disease === "infectious") {
+                alert("Hell0 " + firstName + ", you will be seen by Doctor Allan Mwaura in room 10.");
+            } else if (userInfo.disease === "inherited") {
+                alert("Hello " + firstName + ", you will be seen by Doctor George Oluoch in room 20.");
+            } else if (userInfo.disease === "mental") {
+                alert("Hello " + firstName + ", you will be seen by Doctor Lucy Mohammed in room 15.")
+            } else if (userInfo.disease === "physical") {
+                alert("Hello " + firstName + ", you will be seen by Doctor Joseph Musyoka in room 5.")
+            }
         }
 
     })
