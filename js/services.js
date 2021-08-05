@@ -1,6 +1,13 @@
 //Logic Interface
 var userInfo;
-var matches = 0;
+var matches;
+var matchesArray = [];
+var largest;
+var secondLargest;
+var thirdLargest;
+var myDisease;
+var mostLikely;
+
 
 function ConsoltMaker(fname, lname, cell, email, symptoms, ) {
     this.fullName = fname + " " + lname;
@@ -29,8 +36,9 @@ var pneumonia = new DiseaseGenerator("Pnuemonia", ["cough", "fever", "short-brea
 var corona = new DiseaseGenerator("Covid-19", ["fever", "dry-cough", "fatigue", "sore-throat", "headache", "loss-of-smell", "short-breath", "chest-pains", "musle-aches", "diarrhoea", "loss-of-taste"])
     //Symptoms matcher function
 var symptomsMatcher = (disease, symptoms) => {
+    matches = 0;
     for (let i = 0; i <= disease.length - 1; i++) {
-        var myDisease = disease[i];
+        myDisease = disease[i];
         for (a = 0; a <= symptoms.length - 1; a++) {
             var mySymptom = symptoms[a];
             if (mySymptom === myDisease) {
@@ -38,7 +46,36 @@ var symptomsMatcher = (disease, symptoms) => {
             }
         }
     }
-    return matches;
+    return matches
+}
+
+function IllnessMatcher(name, count) {
+    this.illnessName = name;
+    this.illnessCount = count;
+}
+
+
+
+//ranker
+var ranker = (list) => {
+    largest = 0;
+    secondLargest = 0;
+    thirdLargest = 0;
+    for (let i = 0; i <= list.length; i++) {
+        if (list[i] > largest) {
+            largest = list[i];
+        }
+        secondLargest = list[i - 1]
+        thirdLargest = list[i - 2]
+
+    }
+    return (largest, secondLargest, thirdLargest)
+
+}
+
+var arrayMaker = (first, second, third, fourth, fifth) => {
+    matchesArray.push(first, second, third, fourth, fifth);
+    return matchesArray;
 }
 
 
@@ -75,13 +112,31 @@ $(document).ready(function() {
             });
             userInfo = new ConsoltMaker(firstName, secondName, number, email, symptoms);
             var malariaMatches = symptomsMatcher(malaria.diseaseSymptoms, userInfo.symptoms);
+            var malariaCount = new IllnessMatcher("Malaria", malariaMatches);
             var typhoidMatches = symptomsMatcher(typhoid.diseaseSymptoms, userInfo.symptoms);
+            var typhoidCount = new IllnessMatcher("Typhoid", typhoidMatches);
             var influenzaMatches = symptomsMatcher(influenza.diseaseSymptoms, userInfo.symptoms);
+            var influenzaCount = new IllnessMatcher("Influenza", influenzaMatches);
             var pneumoniaMatches = symptomsMatcher(pneumonia.diseaseSymptoms, userInfo.symptoms);
+            var pneumoniaCount = new IllnessMatcher("Pneumonia", pneumoniaMatches);
             var coronaMatches = symptomsMatcher(corona.diseaseSymptoms, userInfo.symptoms);
-            alert(malariaMatches)
-            alert(typhoidMatches)
-            alert
+            var coronaCount = new IllnessMatcher("Covid-19", coronaMatches);
+            arrayMaker(malariaCount.illnessCount, typhoidCount.illnessCount, influenzaCount.illnessCount, pneumoniaCount.illnessCount, coronaCount.illnessCount);
+            ranker(matchesArray)
+            if (malariaCount.illnessCount === largest) {
+                mostLikely = (malariaCount.illnessName + " " + malariaCount.illnessCount)
+            } else if (largest === typhoidCount.illnessCount) {
+                mostLikely = (typhoidCount.illnessName + " " + typhoidCount.illnessCount)
+            } else if (largest === influenzaCount.illnessCount) {
+                mostLikely = (influenzaCount.illnessName + " " + influenzaCount.illnessCount)
+            } else if (largest === pneumoniaCount.illnessCount) {
+                mostLikely = (pneumoniaCount.illnessName + " " + pneumoniaCount.illnessCount)
+            } else if (largest === coronaCount.illnessCount) {
+                mostLikely = (coronaCount.illnessName + " " + coronaCount.illnessCount)
+            } else {
+                alert(error)
+            }
+            alert(mostLikely)
         }
     })
     $("#submit2").click(function(event) {
