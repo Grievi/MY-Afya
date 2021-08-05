@@ -203,7 +203,7 @@ header {
     color: white;
 }
 
-.footer {
-    margin-top: 70px;
-    margin-left: 90px;
+#footer {
+    background: linear-gradient(180deg, rgba(54, 128, 195, 0.92) 7.29%, rgba(54, 128, 195, 0) 100%);
+    margin: 0;
 }
