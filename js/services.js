@@ -126,13 +126,13 @@ $(document).ready(function() {
             if (malariaCount.illnessCount === largest) {
                 mostLikely = ("Hello " + firstName + ", You are most likely suffering from " + malariaCount.illnessName + ". We recommend that you take an RDT test.")
             } else if (largest === typhoidCount.illnessCount) {
-                mostLikely = ("Hello" + firstName + ", You are most likely suffering from " + typhoidCount.illnessName + ". We recommend that you take a Widal test.")
+                mostLikely = ("Hello " + firstName + ", You are most likely suffering from " + typhoidCount.illnessName + ". We recommend that you take a Widal test.")
             } else if (largest === influenzaCount.illnessCount) {
-                mostLikely = ("Hello" + firstName + ", You are most likely suffering from " + influenzaCount.illnessName + ". We recommend that you take a RIDT test.")
+                mostLikely = ("Hello " + firstName + ", You are most likely suffering from " + influenzaCount.illnessName + ". We recommend that you take a RIDT test.")
             } else if (largest === pneumoniaCount.illnessCount) {
-                mostLikely = ("Hello" + firstName + ", You are most likely suffering from " + pneumoniaCount.illnessName + ". We recommend that you take a chest X-ray.")
+                mostLikely = ("Hello " + firstName + ", You are most likely suffering from " + pneumoniaCount.illnessName + ". We recommend that you take a chest X-ray.")
             } else if (largest === coronaCount.illnessCount) {
-                mostLikely = ("Hello" + firstName + ", You are most likely suffering from " + coronaCount.illnessName + ". We recommend that you take an Antigen test.")
+                mostLikely = ("Hello " + firstName + ", You are most likely suffering from " + coronaCount.illnessName + ". We recommend that you take an Antigen test.")
             } else {
                 alert(error)
             }
