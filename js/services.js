@@ -24,8 +24,10 @@ function DiseaseGenerator(name, symptoms) {
 var malaria = new DiseaseGenerator("Malaria", ["chills", "fever", "sweating", "muscle-aches", "nausea", "vomiting", "pale-skin", "headache", "abdominal-pains", "seizures"])
 var typhoid = new DiseaseGenerator("Typhoid", ["muscle-aches", "constipation", "diarrhoea", "nausea", "vomiting", "fatigue", "dry-cough", "weight-loss", "abdominal-pains", "loss-of-appetite"])
 var commonCold = new DiseaseGenerator("Common cold", ["fever", "muscle-aches", "cough", "runny-nose", "loss-of-smell", "chills", "fatigue", "headache", "sore-throat"]);
-
-//Symptoms matcher function
+var influenza = new DiseaseGenerator("Influenza", ["fever", "coughing", "sore-throat", "runny-nose", "muscle-aches", "muscle-ache", "headache", "fatigue", "vomiting", "diarrhoea"]);
+var pneumonia = new DiseaseGenerator("Pnuemonia", ["cough", "fever", "short-breath", "chest-pains", "loss-of-appetite", "nausea", "vomiting", "fatigue", "rapid-breathing"]);
+var covid = new DiseaseGenerator("Covid-19", ["fever", "dry-cough", "fatigue", "sore-throat", "headache", "loss-of-smell", "short-breath", "chest-pains", "musle-aches", "diarrhoea"])
+    //Symptoms matcher function
 var symptomsMatcher = (disease, symptoms) => {
     for (let i = 0; i <= disease.length - 1; i++) {
         var myDisease = disease[i];
