@@ -16,6 +16,14 @@ function PatientMaker(fname, lname, cell, email, disease, message) {
     this.message = message;
 }
 
+function DiseaseGenerator(name, symptoms) {
+    this.diseaseName = name;
+    this.diseaseSymptoms = symptoms;
+}
+var malaria = new DiseaseGenerator("Malaria", ["chills", "fever", "sweating", "muscle-aches", "nausea", "vomiting", "pale-skin", "headache", "abdominal-pains", "seizures"])
+var typhoid = new DiseaseGenerator("Typhoid", ["muscle-aches", "constipation", "diarrhoea", "nausea", "vomiting", "fatigue", "dry-cough", "weight-loss", "abdominal-pains", "loss-of-appetite"])
+var commonCold = new DiseaseGenerator("Common cold", ["fever", "muscle-aches", "cough", "runny-nose", "loss-of-smell", "chills", "fatigue", "headache", "sore-throat"]);
+
 
 
 //User Interface
@@ -78,11 +86,6 @@ $(document).ready(function() {
             $("input#s-disease").focus();
         } else {
             userInfo = new PatientMaker(firstName, secondName, number, email, disease, message);
-            alert(userInfo.fullName);
-            alert(userInfo.phoneNumber);
-            alert(userInfo.email);
-            alert(userInfo.disease);
-            alert(userInfo.message);
         }
 
     })
