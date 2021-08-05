@@ -106,7 +106,7 @@
 .form-selection {
     height: fit-content;
     width: 50rems;
-    margin: 0;
+    padding-left: 6rem;
 }
 
 .symptoms-selections {
