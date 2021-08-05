@@ -64,7 +64,7 @@ header {
 }
 
 .card {
-    background-image: url(../Assets/about_us/jonathan-borba-v_2FRXEba94-unsplash.jpg);
+    background-image: url(Assets/about_us/jonathan-borba-v_2FRXEba94-unsplash.jpg);
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -98,7 +98,7 @@ header {
 }
 
 .card-1 {
-    background-image: url(../Assets/services/bill-oxford-8u_2imJaVQs-unsplash.jpg);
+    background-image: url(Assets/services/bill-oxford-8u_2imJaVQs-unsplash.jpg);
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -109,7 +109,7 @@ header {
 }
 
 .card-2 {
-    background-image: url(../Assets/services/camilo-jimenez-vGu08RYjO-s-unsplash.jpg);
+    background-image: url(Assets/services/camilo-jimenez-vGu08RYjO-s-unsplash.jpg);
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -120,7 +120,7 @@ header {
 }
 
 .box-1 {
-    background-image: url(../Assets/services/adhy-savala-zbpgmGe27p8-unsplash.jpg);
+    background-image: url(Assets/services/adhy-savala-zbpgmGe27p8-unsplash.jpg);
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -131,7 +131,7 @@ header {
 }
 
 .box-2 {
-    background-image: url(../Assets/services/pexels-anna-shvets-4225880.jpg);
+    background-image: url(Assets/services/pexels-anna-shvets-4225880.jpg);
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -172,7 +172,7 @@ header {
 .card-2b {
     width: 92vw;
     height: 30vh;
-    background-image: url(../Assets/consultation/antonella-vilardo-dwXetPzJWs8-unsplash.jpg);
+    background-image: url(Assets/consultation/antonella-vilardo-dwXetPzJWs8-unsplash.jpg);
     background-size: cover;
     background-position: center;
     margin-left: 70px;
