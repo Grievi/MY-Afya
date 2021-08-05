@@ -10,27 +10,32 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <nav class="navbar navbar-expand-sm " style="position: relative;" display="flex">
-            <a class="nav-brand" href="#">LOGO</a>
-            <ul class="navbar-nav" id="home-key">
-                <li class="nav-item">
-                    <a class="nav-link" href="./homepage.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./services.html">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">CONTACT</a>
-                </li>
-            </ul>
+    <header>
+        <div class="container-fluid">
 
-        </nav>
+            <nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a id="logo" class="navbar-brand fw-bold p-md-3" href="#">MyAfya</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div id="navBar" class="navbar-nav ms-auto text-center">
+                            <a class="nav-link active fw-bold" aria-current="page" href="./homepage.html">HOME</a>
+                            <a class="nav-link fw-bold" href="#">ABOUT US</a>
+                            <a class="nav-link fw-bold" href="./services.html">SERVICES</a>
+                            <a class="nav-link fw-bold" href="./contact.html">CONTACT</a>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="myafya">
+                <h1 style="color:white;text-transform: uppercase;">my afya comes first</h1><br>
+                <h3 style=" color:white;text-transform: uppercase;">jijue,jitibu!</h3>
+            </div>
+        </div>
     </header>
-
     <div class="container symptoms">
         <h1>CONSULTATION</h1>
         <form class="form-selection">
@@ -43,29 +48,29 @@
                     <button id="symptoms-button">Symptoms</button>
                     <ul class="symptoms-selections">
                         <li><label for="chills">Chills</label><input type="checkbox" id="chills" value="chills" name="symptoms"></li>
-                        <li><label for="fever">Fever</label><input type="checkbox" id="fever" value="fever"></li>
-                        <li><label for="sweating">Sweating</label><input type="checkbox" id="sweating" value="checkbox"></li>
-                        <li><label for="muscle-aches">Muscle aches</label><input type="checkbox" id="muscle-aches" value="muscle-aches"></li>
-                        <li><label for="nausea">Nausea</label><input type="checkbox" id="nausea" value="nausea"></li>
-                        <li><label for="vomiting">Vomiting</label><input type="checkbox" id="vomiting" value="vomiting"></li>
-                        <li><label for="pale-skin">Pale Skin</label><input type="checkbox" id="pale-skin" value="pale-skin"></li>
-                        <li><label for="headache">Headache</label><input type="checkbox" id="headache" value="headache"></li>
-                        <li><label for="abdominal-pains">Abdominal pains</label><input type="checkbox" id="abdominal-pains" value="abdominal-pains"></li>
-                        <li><label for="seizures">Seizures</label><input type="checkbox" id="seizures" value="seizures"></li>
-                        <li><label for="constipation">Constipation</label><input type="checkbox" id="constipation" value="constipation"></li>
-                        <li><label for="diarrhoea">Diarrhoea</label><input type="checkbox" id="diarrhoea" value="diarrhoea"></li>
-                        <li><label for="fatigue">Fatigue</label><input type="checkbox" id="fatigue" value="fatigue"></li>
-                        <li><label for="cough">Cough</label><input type="checkbox" id="cough" value="cough"></li>
-                        <li><label for="dry-cough">Dry cough</label><input type="checkbox" id="dry-cough" value="dry-cough"></li>
-                        <li><label for="weight-loss">Weight loss</label><input type="checkbox" id="weight-loss" value="weight-loss"></li>
-                        <li><label for="loss-of-appetite">Loss off appetite</label><input type="checkbox" id="loss-of-appetite" value="loss-of-appetite"></li>
-                        <li><label for="runny-nose">Runny nose</label><input type="checkbox" id="runny-nose" value="runny-nose"></li>
-                        <li><label for="loss-of-smell">Loss of smell</label><input type="checkbox" id="loss-of-smell" value="loss-of-smell"></li>
-                        <li><label for="sore-throat">Sore throat</label><input type="checkbox" id="sore-throat" value="sore-throat"></li>
-                        <li><label for="sneezing">Sneezing</label><input type="checkbox" id="sneezing" value="sneezing"></li>
-                        <li><label for="short-breath">Shortness of breath</label><input type="checkbox" id="short-breath" value="short-breath"></li>
-                        <li><label for="chest-pains">Chest pains</label><input type="checkbox" id="chest-pains" value="chest-pains"></li>
-                        <li><label for="rapid-breathing">Rapid breathing</label><input type="checkbox" id="rapid-breathing" value="rapid-breathing"></li>
+                        <li><label for="fever">Fever</label><input type="checkbox" id="fever" value="fever" name="symptoms"></li>
+                        <li><label for="sweating">Sweating</label><input type="checkbox" id="sweating" value="checkbox" name="symptoms"></li>
+                        <li><label for="muscle-aches">Muscle aches</label><input type="checkbox" id="muscle-aches" value="muscle-aches" name="symptoms"></li>
+                        <li><label for="nausea">Nausea</label><input type="checkbox" id="nausea" value="nausea" name="symptoms"></li>
+                        <li><label for="vomiting">Vomiting</label><input type="checkbox" id="vomiting" value="vomiting" name="symptoms"></li>
+                        <li><label for="pale-skin">Pale Skin</label><input type="checkbox" id="pale-skin" value="pale-skin" name="symptoms"></li>
+                        <li><label for="headache">Headache</label><input type="checkbox" id="headache" value="headache" name="symptoms"></li>
+                        <li><label for="abdominal-pains">Abdominal pains</label><input type="checkbox" id="abdominal-pains" value="abdominal-pains" name="symptoms"></li>
+                        <li><label for="seizures">Seizures</label><input type="checkbox" id="seizures" value="seizures" name="symptoms"></li>
+                        <li><label for="constipation">Constipation</label><input type="checkbox" id="constipation" value="constipation" name="symptoms"></li>
+                        <li><label for="diarrhoea">Diarrhoea</label><input type="checkbox" id="diarrhoea" value="diarrhoea" name="symptoms"></li>
+                        <li><label for="fatigue">Fatigue</label><input type="checkbox" id="fatigue" value="fatigue" name="symptoms"></li>
+                        <li><label for="cough">Cough</label><input type="checkbox" id="cough" value="cough" name="symptoms"></li>
+                        <li><label for="dry-cough">Dry cough</label><input type="checkbox" id="dry-cough" value="dry-cough" name="symptoms"></li>
+                        <li><label for="weight-loss">Weight loss</label><input type="checkbox" id="weight-loss" value="weight-loss" name="symptoms"></li>
+                        <li><label for="loss-of-appetite">Loss off appetite</label><input type="checkbox" id="loss-of-appetite" value="loss-of-appetite" name="symptoms"></li>
+                        <li><label for="runny-nose">Runny nose</label><input type="checkbox" id="runny-nose" value="runny-nose" name="symptoms"></li>
+                        <li><label for="loss-of-smell">Loss of smell</label><input type="checkbox" id="loss-of-smell" value="loss-of-smell" name="symptoms"></li>
+                        <li><label for="sore-throat">Sore throat</label><input type="checkbox" id="sore-throat" value="sore-throat" name="symptoms"></li>
+                        <li><label for="sneezing">Sneezing</label><input type="checkbox" id="sneezing" value="sneezing" name="symptoms"></li>
+                        <li><label for="short-breath">Shortness of breath</label><input type="checkbox" id="short-breath" value="short-breath" name="symptoms"></li>
+                        <li><label for="chest-pains">Chest pains</label><input type="checkbox" id="chest-pains" value="chest-pains" name="symptoms"></li>
+                        <li><label for="rapid-breathing">Rapid breathing</label><input type="checkbox" id="rapid-breathing" value="rapid-breathing" name="symptoms"></li>
                     </ul>
 
                 </li>

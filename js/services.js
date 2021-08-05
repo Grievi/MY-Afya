@@ -15,7 +15,7 @@ function PatientMaker(fname, lname, cell, email, disease, message) {
     this.disease = disease;
     this.message = message;
 }
-myArray = [];
+
 
 
 
