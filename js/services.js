@@ -18,7 +18,6 @@ function PatientMaker(fname, lname, cell, email, disease, message) {
 
 
 
-
 //User Interface
 $(document).ready(function() {
     $("button#symptoms-button").click(function(event) {
@@ -31,7 +30,7 @@ $(document).ready(function() {
         var secondName = $("input#c-lname").val();
         var number = $("input#c-cell").val();
         var email = $("input#c-email").val() + "@gmail.com";
-        var symptoms = $("input#c-symptoms").val();
+        var symptoms = [];
         var description = $("input#c-description").val();
 
         if (firstName === "" || secondName === "") {
@@ -46,16 +45,12 @@ $(document).ready(function() {
             $("input#c-cell").focus();
         } else if (email === "") {
             alert("Please enter your email for us to be able to communicate with you!")
-        } else if (symptoms === "") {
-            alert("Please make a list of your symptoms for us to be able to give you a diagnosis!");
-            $("input#c-symptoms").focus();
         } else {
+            $("input[name=symptoms]:checked").each(function() {
+                symptoms.push($(this).val());
+            });
             userInfo = new ConsoltMaker(firstName, secondName, number, email, symptoms)
         }
-        $("input[type=checkbox]:checked").each(function() {
-            myArray.push($(this).val());
-        });
-        alert(myArray)
     })
     $("#submit2").click(function(event) {
         event.preventDefault();
