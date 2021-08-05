@@ -164,19 +164,6 @@ header {
     color: white;
 }
 
-.overlay1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-image: url(/Assets/services/bill-oxford-8u_2imJaVQs-unsplash.jpg);
-}
-
 .image1:hover.overlay1 {
     opacity: 1;
 }
