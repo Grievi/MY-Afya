@@ -26,7 +26,7 @@ var typhoid = new DiseaseGenerator("Typhoid", ["muscle-aches", "constipation", "
 var commonCold = new DiseaseGenerator("Common cold", ["fever", "muscle-aches", "cough", "runny-nose", "loss-of-smell", "chills", "fatigue", "headache", "sore-throat"]);
 var influenza = new DiseaseGenerator("Influenza", ["fever", "coughing", "sore-throat", "runny-nose", "muscle-aches", "muscle-ache", "headache", "fatigue", "vomiting", "diarrhoea"]);
 var pneumonia = new DiseaseGenerator("Pnuemonia", ["cough", "fever", "short-breath", "chest-pains", "loss-of-appetite", "nausea", "vomiting", "fatigue", "rapid-breathing"]);
-var corona = new DiseaseGenerator("Covid-19", ["fever", "dry-cough", "fatigue", "sore-throat", "headache", "loss-of-smell", "short-breath", "chest-pains", "musle-aches", "diarrhoea"])
+var corona = new DiseaseGenerator("Covid-19", ["fever", "dry-cough", "fatigue", "sore-throat", "headache", "loss-of-smell", "short-breath", "chest-pains", "musle-aches", "diarrhoea", "loss-of-taste"])
     //Symptoms matcher function
 var symptomsMatcher = (disease, symptoms) => {
     for (let i = 0; i <= disease.length - 1; i++) {
