@@ -34,64 +34,110 @@
             </div>
         </div>
     </header>
-    <div class="container symptoms">
-        <h1>CONSULTATION</h1>
-        <form class="form-selection">
-            <ul style="list-style-type: none;">
-                <li class="list-items"><label for="c-fname">Name:</label><input placeholder="First Name" type="text" id="c-fname"></li>
-                <li class="list-items"><label for="c-lname">L.Name:</label><input placeholder="Second Name" type="text" id="c-lname"></li>
-                <li class="list-items"><label for="c-cell">Cell No:</label><input placeholder="07.." type="number" id="c-cell"></li>
-                <li class="list-items"><label for="c-email">E mail:</label><input placeholder="name@gamil.com" type="text" id="c-email"></li>
-                <li class="list-items">
-                    <button id="symptoms-button">Symptoms</button>
-                    <ul class="symptoms-selections">
-                        <li><label for="chills">Chills</label><input type="checkbox" id="chills" value="chills" name="symptoms"></li>
-                        <li><label for="fever">Fever</label><input type="checkbox" id="fever" value="fever" name="symptoms"></li>
-                        <li><label for="sweating">Sweating</label><input type="checkbox" id="sweating" value="checkbox" name="symptoms"></li>
-                        <li><label for="muscle-aches">Muscle aches</label><input type="checkbox" id="muscle-aches" value="muscle-aches" name="symptoms"></li>
-                        <li><label for="nausea">Nausea</label><input type="checkbox" id="nausea" value="nausea" name="symptoms"></li>
-                        <li><label for="vomiting">Vomiting</label><input type="checkbox" id="vomiting" value="vomiting" name="symptoms"></li>
-                        <li><label for="pale-skin">Pale Skin</label><input type="checkbox" id="pale-skin" value="pale-skin" name="symptoms"></li>
-                        <li><label for="headache">Headache</label><input type="checkbox" id="headache" value="headache" name="symptoms"></li>
-                        <li><label for="abdominal-pains">Abdominal pains</label><input type="checkbox" id="abdominal-pains" value="abdominal-pains" name="symptoms"></li>
-                        <li><label for="seizures">Seizures</label><input type="checkbox" id="seizures" value="seizures" name="symptoms"></li>
-                        <li><label for="constipation">Constipation</label><input type="checkbox" id="constipation" value="constipation" name="symptoms"></li>
-                        <li><label for="diarrhoea">Diarrhoea</label><input type="checkbox" id="diarrhoea" value="diarrhoea" name="symptoms"></li>
-                        <li><label for="fatigue">Fatigue</label><input type="checkbox" id="fatigue" value="fatigue" name="symptoms"></li>
-                        <li><label for="cough">Cough</label><input type="checkbox" id="cough" value="cough" name="symptoms"></li>
-                        <li><label for="dry-cough">Dry cough</label><input type="checkbox" id="dry-cough" value="dry-cough" name="symptoms"></li>
-                        <li><label for="weight-loss">Weight loss</label><input type="checkbox" id="weight-loss" value="weight-loss" name="symptoms"></li>
-                        <li><label for="loss-of-appetite">Loss off appetite</label><input type="checkbox" id="loss-of-appetite" value="loss-of-appetite" name="symptoms"></li>
-                        <li><label for="runny-nose">Runny nose</label><input type="checkbox" id="runny-nose" value="runny-nose" name="symptoms"></li>
-                        <li><label for="loss-of-smell">Loss of smell</label><input type="checkbox" id="loss-of-smell" value="loss-of-smell" name="symptoms"></li>
-                        <li><label for="sore-throat">Sore throat</label><input type="checkbox" id="sore-throat" value="sore-throat" name="symptoms"></li>
-                        <li><label for="sneezing">Sneezing</label><input type="checkbox" id="sneezing" value="sneezing" name="symptoms"></li>
-                        <li><label for="short-breath">Shortness of breath</label><input type="checkbox" id="short-breath" value="short-breath" name="symptoms"></li>
-                        <li><label for="chest-pains">Chest pains</label><input type="checkbox" id="chest-pains" value="chest-pains" name="symptoms"></li>
-                        <li><label for="rapid-breathing">Rapid breathing</label><input type="checkbox" id="rapid-breathing" value="rapid-breathing" name="symptoms"></li>
-                    </ul>
+    <div style="padding-left:5rem" class="container symptoms">
+        <div>
+            <h1>CONSULTATION</h1>
+        </div>
+        <div class="row">
 
-                </li>
-                <li class="list-items"><label for="c-desctiption">Describe:</label><input id="c-description" type="text" class="textarea"></li>
-                <li class="list-items"><label></label><button class="submit" id="submit1">Submit</button></li>
-            </ul>
-        </form>
-        <h1>SERVICES OFFERED</h1>
-        <form class="form-selection">
-            <ul style="list-style-type: none;">
-                <li class="list-items"><label for="s-fname">Name:</label><input placeholder="First Name" type="text" id="s-fname"></li>
-                <li class="list-items"><label for="s-lname">L.Name:</label><input placeholder="Second Name" type="text" id="s-lname"></li>
-                <li class="list-items"><label for="s-cell">Cell No:</label><input placeholder="07.." type="number" id="s-cell" maxlength="10"></li>
-                <li class="list-items"><label for="s-email">E mail:</label><input placeholder="name@gamil.com" type="text" id="s-email"></li>
-                <li class="list-items"><label for="s-disease">Disease:</label><input type="text" id="s-disease"></li>
-                <li class="list-items"><label for="s-message">Message:</label><input type="text" id="s-message" class="textarea"></li>
-                <li class="list-items"><label></label><button class="submit" id="submit2">Submit</button></li>
-            </ul>
-        </form>
+            <div class="col-md-8">
+                <form class="form-selection">
+                    <ul style="list-style-type: none;">
+                        <li class="list-items"><label for="c-fname">Name:</label><input placeholder="First Name" type="text" id="c-fname"></li>
+                        <li class="list-items"><label for="c-lname">L.Name:</label><input placeholder="Second Name" type="text" id="c-lname"></li>
+                        <li class="list-items"><label for="c-cell">Cell No:</label><input placeholder="07.." type="number" id="c-cell"></li>
+                        <li class="list-items"><label for="c-email">E mail:</label><input placeholder="name@gamil.com" type="text" id="c-email"></li>
+                        <li class="list-items">
+                            <button id="symptoms-button">Symptoms</button>
+                            <ul class="symptoms-selections">
+                                <li><label for="chills">Chills</label><input type="checkbox" id="chills" value="chills" name="symptoms"></li>
+                                <li><label for="fever">Fever</label><input type="checkbox" id="fever" value="fever" name="symptoms"></li>
+                                <li><label for="sweating">Sweating</label><input type="checkbox" id="sweating" value="sweating" name="symptoms"></li>
+                                <li><label for="muscle-aches">Muscle aches</label><input type="checkbox" id="muscle-aches" value="muscle-aches" name="symptoms"></li>
+                                <li><label for="nausea">Nausea</label><input type="checkbox" id="nausea" value="nausea" name="symptoms"></li>
+                                <li><label for="vomiting">Vomiting</label><input type="checkbox" id="vomiting" value="vomiting" name="symptoms"></li>
+                                <li><label for="pale-skin">Pale Skin</label><input type="checkbox" id="pale-skin" value="pale-skin" name="symptoms"></li>
+                                <li><label for="headache">Headache</label><input type="checkbox" id="headache" value="headache" name="symptoms"></li>
+                                <li><label for="abdominal-pains">Abdominal pains</label><input type="checkbox" id="abdominal-pains" value="abdominal-pains" name="symptoms"></li>
+                                <li><label for="seizures">Seizures</label><input type="checkbox" id="seizures" value="seizures" name="symptoms"></li>
+                                <li><label for="constipation">Constipation</label><input type="checkbox" id="constipation" value="constipation" name="symptoms"></li>
+                                <li><label for="diarrhoea">Diarrhoea</label><input type="checkbox" id="diarrhoea" value="diarrhoea" name="symptoms"></li>
+                                <li><label for="fatigue">Fatigue</label><input type="checkbox" id="fatigue" value="fatigue" name="symptoms"></li>
+                                <li><label for="cough">Cough</label><input type="checkbox" id="cough" value="cough" name="symptoms"></li>
+                                <li><label for="dry-cough">Dry cough</label><input type="checkbox" id="dry-cough" value="dry-cough" name="symptoms"></li>
+                                <li><label for="weight-loss">Weight loss</label><input type="checkbox" id="weight-loss" value="weight-loss" name="symptoms"></li>
+                                <li><label for="loss-of-appetite">Loss off appetite</label><input type="checkbox" id="loss-of-appetite" value="loss-of-appetite" name="symptoms"></li>
+                                <li><label for="runny-nose">Runny nose</label><input type="checkbox" id="runny-nose" value="runny-nose" name="symptoms"></li>
+                                <li><label for="loss-of-smell">Loss of smell</label><input type="checkbox" id="loss-of-smell" value="loss-of-smell" name="symptoms"></li>
+                                <li><label for="sore-throat">Sore throat</label><input type="checkbox" id="sore-throat" value="sore-throat" name="symptoms"></li>
+                                <li><label for="sneezing">Sneezing</label><input type="checkbox" id="sneezing" value="sneezing" name="symptoms"></li>
+                                <li><label for="short-breath">Shortness of breath</label><input type="checkbox" id="short-breath" value="short-breath" name="symptoms"></li>
+                                <li><label for="chest-pains">Chest pains</label><input type="checkbox" id="chest-pains" value="chest-pains" name="symptoms"></li>
+                                <li><label for="rapid-breathing">Rapid breathing</label><input type="checkbox" id="rapid-breathing" value="rapid-breathing" name="symptoms"></li>
+                            </ul>
+
+                        </li>
+                        <li class="list-items"><label for="c-desctiption">Describe:</label><input id="c-description" type="text" class="textarea"></li>
+                        <li class="list-items"><label></label><button class="submit" id="submit1">Submit</button></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h1>SERVICES OFFERED</h1>
+        </div>
+        <div style="padding-bottom:5rem" class="row">
+            <div class="col-md-8 ms-3">
+                <form class="form-selection">
+                    <ul style="list-style-type: none;">
+                        <li class="list-items"><label for="s-fname">Name:</label><input placeholder="First Name" type="text" id="s-fname"></li>
+                        <li class="list-items"><label for="s-lname">L.Name:</label><input placeholder="Second Name" type="text" id="s-lname"></li>
+                        <li class="list-items"><label for="s-cell">Cell No:</label><input placeholder="07.." type="number" id="s-cell" maxlength="10"></li>
+                        <li class="list-items"><label for="s-email">E mail:</label><input placeholder="name@gamil.com" type="text" id="s-email"></li>
+                        <li class="list-items"><label for="s-disease">Disease:</label><input type="text" id="s-disease"></li>
+                        <li class="list-items"><label for="s-message">Message:</label><input type="text" id="s-message" class="textarea"></li>
+                        <li class="list-items"><label></label><button class="submit" id="submit2">Submit</button></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
     </div>
 
 
     <footer>
+        <div id="footer" class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="fw-bold" style="text-transform:capitalize; font-size:24px;">services offered</span><br>
+                    <span>Pedeatrics</span><br>
+                    <span>Chronic Diseases</span><br>
+                    <span>E.N.T</span><br>
+                    <span>Dental Health</span><br>
+                    <span>Consultation</span><br>
+                    <span>Orthopaedic</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="fw-bold" style="text-transform:capitalize; font-size:24px;">FAQs</span><br>
+                    <span>Social Media</span><br>
+                    <span><img src="./Assets/Social icons/facebook.png" alt="" height="20px" width="20px">Facebook</span><br>
+                    <span><img src="./Assets/Social icons/instagram.png" alt="" height="20px" width="20px">Instagram</span><br>
+                    <span><img src="./Assets/Social icons/twitter.png" alt="" height="20px" width="20px">Twitter</span><br>
+                    <span><img src="./Assets/Social icons/youtube.png" alt="" height="20px" width="20px">Youtube</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="fw-bold" style="text-transform:capitalize; font-size:24px;">Quick Links and Location</span><br>
+                    <span>Ngonjera Street,</span><br>
+                    <span>Watamu Building,</span><br>
+                    <span>2nd Floor,</span><br>
+                    <div class="links" style="text-decoration: none;">
+                        <span><a style="text-decoration: none;" href="#">Good Health Practises</a></span><br>
+                        <span><a style="text-decoration: none;" href="#">Live Happy ever</a></span><br>
+                        <span><a style="text-decoration: none;" href="#">Health Your Greatest wealth</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </footer>
 
