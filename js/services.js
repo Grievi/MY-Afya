@@ -1,5 +1,6 @@
 //Logic Interface
 var userInfo;
+var matches = 0;
 
 function ConsoltMaker(fname, lname, cell, email, symptoms, ) {
     this.fullName = fname + " " + lname;
@@ -24,6 +25,19 @@ var malaria = new DiseaseGenerator("Malaria", ["chills", "fever", "sweating", "m
 var typhoid = new DiseaseGenerator("Typhoid", ["muscle-aches", "constipation", "diarrhoea", "nausea", "vomiting", "fatigue", "dry-cough", "weight-loss", "abdominal-pains", "loss-of-appetite"])
 var commonCold = new DiseaseGenerator("Common cold", ["fever", "muscle-aches", "cough", "runny-nose", "loss-of-smell", "chills", "fatigue", "headache", "sore-throat"]);
 
+//Symptoms matcher function
+var symptomsMatcher = (disease, symptoms) => {
+    for (let i = 0; i <= disease.length - 1; i++) {
+        var myDisease = disease[i];
+        for (a = 0; a <= symptoms.length - 1; a++) {
+            var mySymptom = symptoms[a];
+            if (mySymptom === myDisease) {
+                matches += 1;
+            }
+        }
+    }
+    return matches;
+}
 
 
 //User Interface
@@ -58,6 +72,10 @@ $(document).ready(function() {
                 symptoms.push($(this).val());
             });
             userInfo = new ConsoltMaker(firstName, secondName, number, email, symptoms)
+            var malariaMatches = symptomsMatcher(malaria.diseaseSymptoms, userInfo.symptoms)
+            var typhoidMatches = symptomsMatcher(typhoid.diseaseSymptoms, userInfo.symptoms)
+            alert(malariaMatches)
+            alert(typhoidMatches)
         }
     })
     $("#submit2").click(function(event) {
