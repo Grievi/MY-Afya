@@ -205,5 +205,5 @@ header {
 
 #footer {
     background: linear-gradient(180deg, rgba(54, 128, 195, 0.92) 7.29%, rgba(54, 128, 195, 0) 100%);
-    margin: 0;
+    margin-top: 50px;
 }
