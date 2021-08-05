@@ -16,12 +16,11 @@ header {
     background: linear-gradient(180deg, rgba(54, 128, 195, 0.92) 7.29%, rgba(54, 128, 195, 0) 100%);
 }
 
-#logo{
-    border-radius: 10% 50% 50% 10%;
-    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.3));
+#logo {
+    border-radius: 0% 60% 20% 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
     color: white;
-    text-shadow: 2px 2px 10px black, 0 0 25px grey , 0 0 15px darkblue;
-    padding: 10px;
+    text-shadow: 2px 2px 10px black, 0 0 25px grey, 0 0 15px darkblue;
 }
 
 #logo:hover {
@@ -64,7 +63,7 @@ header {
 }
 
 .card {
-    background-image: url(Assets/about_us/jonathan-borba-v_2FRXEba94-unsplash.jpg);
+    background-image: url(/Assets/about_us/jonathan-borba-v_2FRXEba94-unsplash.jpg);
     background-position: center;
     background-size: cover;
     height: 30vh;
@@ -98,7 +97,7 @@ header {
 }
 
 .card-1 {
-    background-image: url(Assets/services/bill-oxford-8u_2imJaVQs-unsplash.jpg);
+    background-image: url(/Assets/services/bill-oxford-8u_2imJaVQs-unsplash.jpg);
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -109,7 +108,7 @@ header {
 }
 
 .card-2 {
-    background-image: url(Assets/services/camilo-jimenez-vGu08RYjO-s-unsplash.jpg);
+    background-image: url(/Assets/services/camilo-jimenez-vGu08RYjO-s-unsplash.jpg);
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -120,7 +119,7 @@ header {
 }
 
 .box-1 {
-    background-image: url(Assets/services/adhy-savala-zbpgmGe27p8-unsplash.jpg);
+    background-image: url(/Assets/services/adhy-savala-zbpgmGe27p8-unsplash.jpg);
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -131,7 +130,7 @@ header {
 }
 
 .box-2 {
-    background-image: url(Assets/services/pexels-anna-shvets-4225880.jpg);
+    background-image: url(/Assets/services/pexels-anna-shvets-4225880.jpg);
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -172,7 +171,7 @@ header {
 .card-2b {
     width: 92vw;
     height: 30vh;
-    background-image: url(Assets/consultation/antonella-vilardo-dwXetPzJWs8-unsplash.jpg);
+    background-image: url(/Assets/consultation/antonella-vilardo-dwXetPzJWs8-unsplash.jpg);
     background-size: cover;
     background-position: center;
     margin-left: 70px;
