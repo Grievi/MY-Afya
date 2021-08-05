@@ -124,15 +124,15 @@ $(document).ready(function() {
             arrayMaker(malariaCount.illnessCount, typhoidCount.illnessCount, influenzaCount.illnessCount, pneumoniaCount.illnessCount, coronaCount.illnessCount);
             ranker(matchesArray)
             if (malariaCount.illnessCount === largest) {
-                mostLikely = ("Hello " + firstName + ", You are most likely suffering from " + malariaCount.illnessName + " " + malariaCount.illnessCount + ". We recommend that you take an Antigen test.")
+                mostLikely = ("Hello " + firstName + ", You are most likely suffering from " + malariaCount.illnessName + ". We recommend that you take an RDT test.")
             } else if (largest === typhoidCount.illnessCount) {
-                mostLikely = (typhoidCount.illnessName + " " + typhoidCount.illnessCount)
+                mostLikely = ("Hello" + firstName + ", You are most likely suffering from " + typhoidCount.illnessName + ". We recommend that you take a Widal test.")
             } else if (largest === influenzaCount.illnessCount) {
-                mostLikely = (influenzaCount.illnessName + " " + influenzaCount.illnessCount)
+                mostLikely = ("Hello" + firstName + ", You are most likely suffering from " + influenzaCount.illnessName + ". We recommend that you take a RIDT test.")
             } else if (largest === pneumoniaCount.illnessCount) {
-                mostLikely = (pneumoniaCount.illnessName + " " + pneumoniaCount.illnessCount)
+                mostLikely = ("Hello" + firstName + ", You are most likely suffering from " + pneumoniaCount.illnessName + ". We recommend that you take a chest X-ray.")
             } else if (largest === coronaCount.illnessCount) {
-                mostLikely = (coronaCount.illnessName + " " + coronaCount.illnessCount)
+                mostLikely = ("Hello" + firstName + ", You are most likely suffering from " + coronaCount.illnessName + ". We recommend that you take an Antigen test.")
             } else {
                 alert(error)
             }
